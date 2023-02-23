@@ -1,29 +1,21 @@
-# mapp-vtu
+#mapp-reinstall 브랜치
 
-## Project setup
+> 기존 package.json에서, 기존의 package-lock.json은 사용하지 않고 `npm install`로 재설치 진행해본 ver.
+
+1. 
 ```
+npm cache clean --force
+#
+# package-lock.json 제거
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+2. found 15 vulnerabilities (2 low, 2 moderate, 9 high, 2 critical)
+-> vue-cli 5.0.8로 업데이트 권장
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your unit tests
-```
-npm run test:unit
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<설치 환경>
+* node v14.16.0
+* vue-cli v4.5.0
+* OS mac m1
