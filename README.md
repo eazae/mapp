@@ -11,8 +11,8 @@ npm install -g @vue/cli
 vue upgrade
 ```
 
-2. 
--> vue-cli 5.0.8로 업데이트 권장
+2. found 0 vulnerabilities
+(dependency에 문제 없는 lock ver.)
 
 
 
