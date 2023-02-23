@@ -1,16 +1,17 @@
-#mapp-reinstall 브랜치
+#mapp-reinstall-vuecli5.0.8 브랜치
 
-> 기존 package.json에서, 기존의 package-lock.json은 사용하지 않고 `npm install`로 재설치 진행해본 ver.
+> mapp-reinstall 브랜치에서 checkout해서, vuecli@5.0.8 버전으로 업데이트 후 
+> 그 프로젝트 가지고 동일한 package들 재설치
 
 1. 
 ```
-npm cache clean --force
+npm install -g @vue/cli
 #
 # package-lock.json 제거
-npm install
+vue upgrade
 ```
 
-2. found 15 vulnerabilities (2 low, 2 moderate, 9 high, 2 critical)
+2. 
 -> vue-cli 5.0.8로 업데이트 권장
 
 
