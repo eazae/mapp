@@ -15,11 +15,28 @@ vue upgrade
 (dependency에 문제 없는 lock ver.)
 
 
-3. 주의
-"parserOptions": {
-      "ecmaVersion": 2020,
-      "parser": "@typescript-eslint/parser"
-    },
+3. 실행
+```json
+
+    // coverage 결과값 폴더 생성 (호출부: build.js)
+    "test:build": "vue-cli-service test:unit --coverage ",
+    // 새로 commit 되는 파일들만 test (호출부: husky pre-commit)
+    "test:precommit": "vue-cli-service test:unit -o",
+    // 전체 테스트 코드 실행 (호출부: husky pre-push)
+    "test:prepush": "vue-cli-service test:unit",
+    // 개발 중에 코드 변경사항이 생길 때마다 실행
+    "test:unit": "vue-cli-service test:unit --watch",
+
+```
+
+4. naming convention
+
+(자료)
+
+5. mocking
+
+* __mocks__ 폴더
+
 
 
 <설치 환경>
